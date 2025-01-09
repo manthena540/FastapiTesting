@@ -14,7 +14,7 @@ async def read_user(user_id: int):
         return users[user_id]
     return {"message": "User not found"}
 
-@app.get("/users2/{user_id}")
+@app.get("/users/2/{user_id}")
 async def read_user(user_id: int):
     if user_id in users:
         return users[user_id]
