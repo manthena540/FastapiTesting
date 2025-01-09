@@ -14,7 +14,7 @@ async def read_product(product_id: int):
         return products[product_id]
     return {"message": "Product not found"}
 
-@app.get("/products2/{product_id}")
+@app.get("/products/2/{product_id}")
 async def read_product(product_id: int):
     if product_id in products:
         return products[product_id]
