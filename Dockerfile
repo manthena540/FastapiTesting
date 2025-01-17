@@ -1,6 +1,12 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3-slim
 
+# Accept the build version as a build argument
+ARG BUILD_VERSION
+
+# Set the build version as an environment variable
+ENV BUILD_VERSION=${BUILD_VERSION}
+
 EXPOSE 8000
 
 # Keeps Python from generating .pyc files in the container
